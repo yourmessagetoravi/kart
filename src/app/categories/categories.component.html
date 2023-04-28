@@ -1,1 +1,27 @@
-<p>categories works!</p>
+<section>
+  
+        <div class="container">
+
+            <ng-container *ngIf="categs.length; then categorylist; else nocatetorylist">
+            </ng-container>
+           
+           <ng-template #categorylist>
+            <div class="row">
+                <div class="col" *ngFor="let cate of categs">
+                    <div class="item">
+                    <img [src]="path + cate.img">
+                    <p>{{cate.tit}}</p>
+                </div>
+                </div>
+            </div>
+           </ng-template>
+           
+           <ng-template #nocatetorylist>
+             <h1>Loading...</h1>
+           </ng-template>
+
+
+
+        </div>
+ 
+</section>

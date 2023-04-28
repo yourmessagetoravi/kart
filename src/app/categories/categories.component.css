@@ -1,0 +1,21 @@
+.item{
+height:auto;
+cursor: pointer;
+}
+
+.item img{
+    width:64px;
+    height:auto;
+    display: block;
+    margin: auto;
+}
+
+.item p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.item:hover p{
+    color:#2874f0;
+}
+
