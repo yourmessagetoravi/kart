@@ -1,0 +1,42 @@
+.form-control{
+    border-radius: 0px;
+    border-right:0px;
+}
+
+.input-group-text{
+    border-radius: 0px;
+    background-color: #fff;
+    border-left:0px;
+}
+.navbar-brand{
+    color:#fff;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link{
+    color:#fff;
+}
+
+@media screen and (min-width:986px){
+.form-width{
+    width:500px;
+}
+
+.nav-item .login{
+    font-weight: 500;
+   background-color:#fff;
+   color:#2874f0;
+   margin-left:20px;
+   margin-right:20px;
+}
+
+}
+
+@media screen and (min-width:1200px){
+    .form-width{
+        width:600px;
+    }
+    
+    }
