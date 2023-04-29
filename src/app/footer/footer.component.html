@@ -1,1 +1,41 @@
-<p>footer works!</p>
+<section>
+   <div class="container-fluid footer">
+    <div class="row px-5 pt-2">
+        <div class="row">
+        <div class="col-md-2">
+            <p>{{menuitems[0]|uppercase}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{menuitems[1]|uppercase}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{menuitems[2]|uppercase}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{menuitems[3]|uppercase}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{menuitems[4]}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{menuitems[5]}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2" *ngFor = "let menu of footerMenu">
+            
+            <ul class="nav flex-column">
+                <li class="nav-item" *ngFor = "let item of menu"><a class="nav-link"  [routerLink]="item.link">{{item.label}}</a></li>
+            </ul>
+         </div>
+
+        <div class="col-md-2 bleft" *ngFor = "let address of adresses">
+             <p class="address" *ngFor="let item of address">{{item.aline}}</p>
+        </div>
+    </div>
+    </div>
+   </div> 
+
+   <div class="container-fluid footer"></div>
+</section>

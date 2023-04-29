@@ -1,1 +1,24 @@
-<p>baner works!</p>
+<section>
+    <div class="container-fluid">
+        <div class="row p-0">
+            <div id="carouselExampleControls" class="carousel slide p-0" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item" *ngFor="let baner of baners; let i = index" [ngClass]="{'active': slideIndex == i}">
+                    <img class="d-block w-100" [src]="path + baner.img" [alt]="baner.alt">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" (click)="previousSlide()">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" (click)="nextSlide()">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+              </div>
+            
+
+        </div>
+        </div>
+   
+</section>
