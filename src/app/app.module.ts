@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { TopoffersComponent } from './topoffers/topoffers.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BanerComponent,
     HomeComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    AdvertisementComponent,
+    TopoffersComponent
   ],
   imports: [
     BrowserModule,
